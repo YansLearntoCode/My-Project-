@@ -2,12 +2,12 @@ import random as rn
 
 while True: 
     try:
-        panjangpw = int(input("Masukkan Panjang Password yg Diinginkan : "))
+        pwlen = int(input("Input the length of the password : "))
         
-        for i in range(panjangpw):
+        for i in range(pwlen):
             print(chr(rn.choice(range(33, 127))), end='')
         break
     
     except ValueError:
-        print("Masukkan Angka Ya Adik-Adik!")
+        print("Input number only!!")
         break
